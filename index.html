@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button,
+        input {
+            padding: 10px;
+            outline: none;
+            text-align: center;
+        }
+
+        .map {
+            width: 800px;
+            height: 600px;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, .5) 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 0, 0)  10%);
+            background-size: 20px 20px;
+            background-color: gray;
+            border: 10px solid #333;
+            position: relative;
+        }
+
+        .map .food {
+            width: 20px;
+            height: 20px;
+            background-color: chartreuse;
+            border-radius: 50%;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .map .head {
+            width: 20px;
+            height: 20px;
+            background-color: cornflowerblue;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 100px;
+        }
+
+        .map .body {
+            width: 20px;
+            height: 20px;
+            background-color: rgb(174, 198, 245);
+            position: absolute;
+            top: 220px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="start">开始</button>
+    <button class="stop">暂停</button>
+    <button class="restart">重新开始</button>
+    <input type="text" value="0" class="score" readonly>
+    <div class="map"></div>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
